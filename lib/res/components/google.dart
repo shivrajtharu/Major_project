@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+import '../color.dart';
+
 final GoogleSignIn _googleSignIn = GoogleSignIn(
     scopes: [
       'email'
@@ -34,7 +36,7 @@ class _GoogleState extends State<Google> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
+        backgroundColor: AppColors.appbarColor,
         title: const Text("Google Sign in",
             style: TextStyle(fontWeight: FontWeight.bold)),
         centerTitle: true,

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import '../res/color.dart';
 import '../res/components/round_botton.dart';
 import '../utils/routes/routes_name.dart';
 import '../utils/utils.dart';
@@ -47,7 +48,7 @@ class _LoginViewState extends State<LoginView> {
           resizeToAvoidBottomInset: false,
           backgroundColor: Colors.transparent,
           appBar: AppBar(
-            backgroundColor: Colors.blue,
+            backgroundColor: AppColors.appbarColor,
             title: const Text("Traveller",style: TextStyle(fontWeight: FontWeight.bold)),
             centerTitle: true,
             automaticallyImplyLeading: false,
